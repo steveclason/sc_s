@@ -1,0 +1,26 @@
+{
+  "name": "_s",
+  "version": "0.0.0",
+  "description": "WordPress starter theme.",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/steveclason/_s"
+  },
+  "keywords": [
+    "wordpress",
+    "starter"
+  ],
+  "author": "Steve Clason",
+  "license": "GPLv2 or newer",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-compass": "^1.0.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-copy-to": "0.0.12",
+    "grunt-contrib-compass-sourcemap": "0.0.1"
+  }
+}

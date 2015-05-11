@@ -12,8 +12,9 @@ module.exports = function(grunt){
       dev: {
         options: {
           sassDir: "sass",
-          cssDir: "/",
+          cssDir: ".",
           sourcemap: true,
+          debugInfo: false,
           outputStyle: "nested"
         }
       }

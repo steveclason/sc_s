@@ -1,20 +1,24 @@
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
-	line-height: 1.5em;
+	//line-height: 1.5em;
 	font-weight: bold;
 }
+
 h1 {
-	@include font-size( 3rem );
+	@include adjust-font-size-to( 48px);
 }
 h2 {
-	@include font-size( 2.25rem );
+	@include adjust-font-size-to( 36px);
 }
 h3 {
-	@include font-size( 1.5rem );
+	@include adjust-font-size-to( 24px);
 }
 h4 {
-	@include font-size( 1.25rem );
+	@include adjust-font-size-to( 20px);
 }
-h1 {
-	@include font-size( 1.1rem );
+h5 {
+	@include adjust-font-size-to( 18px);
+}
+h6 {
+	@include adjust-font-size-to( 16px);
 }

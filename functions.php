@@ -117,6 +117,35 @@ function _s_scripts() {
 }
 add_action( 'wp_enqueue_scripts', '_s_scripts' );
 
+// Allow shortcodes in sidebar widgets.
+add_filter( 'widget_text', 'shortcode_unautop' );
+add_filter( 'widget_text', 'do_shortcode' );
+
+// Add shortcode to use RICG ResponsiveImages.
+// $id is the image id, size is a text string set by the theme.
+function tevkori_img( $atts ) {
+	$a = shortcode_atts( array(
+      'id' => '1',
+      'size' => 'large',
+  ), $atts );
+
+  return tevkori_get_srcset_string( $a[ 'id' ], $a[ 'size' ] );
+}
+add_shortcode( 'rimg', 'tevkori_img' );
+
+/**
+ * Add image sizes appropriate to theme layout: name, width, height, crop.
+ * https://developer.wordpress.org/reference/functions/add_image_size/
+ *
+ * Here in conjunction with RICG-Responsive-Images:
+ * https://github.com/ResponsiveImagesCG/wp-tevko-responsive-images
+ *
+ */
+//add_image_size('small', 370, 275, true);
+//add_image_size('medium', 770, 400, true);
+//add_image_size('large', 170, 128, true);
+//add_image_size( 'excerpt-thumb', 198, 145, true );
+
 /**
  * Implement the Custom Header feature.
  */

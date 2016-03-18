@@ -2,7 +2,7 @@
 /**
  * Jetpack Compatibility File.
  *
- * @link https://jetpack.com/
+ * @link https://jetpack.me/
  *
  * @package _s
  */
@@ -10,8 +10,8 @@
 /**
  * Jetpack setup function.
  *
- * See: https://jetpack.com/support/infinite-scroll/
- * See: https://jetpack.com/support/responsive-videos/
+ * See: https://jetpack.me/support/infinite-scroll/
+ * See: https://jetpack.me/support/responsive-videos/
  */
 function _s_jetpack_setup() {
 	// Add theme support for Infinite Scroll.

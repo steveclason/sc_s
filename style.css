@@ -36,7 +36,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Widgets
 # Content
 	## Posts and pages
-	## Asides
 	## Comments
 # Infinite scroll
 # Media
@@ -470,6 +469,7 @@ textarea {
 	color: #666;
 	border: 1px solid #ccc;
 	border-radius: 3px;
+	padding: 3px;
 }
 
 select {
@@ -495,26 +495,7 @@ textarea:focus {
 	color: #111;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"] {
-	padding: 3px;
-}
-
 textarea {
-	padding-left: 3px;
 	width: 100%;
 }
 
@@ -794,14 +775,6 @@ a:active {
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
-}
-
-/*--------------------------------------------------------------
-## Asides
---------------------------------------------------------------*/
-.blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
-	display: none;
 }
 
 /*--------------------------------------------------------------
